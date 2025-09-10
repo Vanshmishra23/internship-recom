@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="skills.title">Select Skills</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="section land-bg min-h-screen center" style="padding:40px;">
+    <div class="grad-a"></div>
+    <div class="grad-b"></div>
+
+    <div class="lang">
+      <select id="language" class="select">
+        <option>English</option>
+        <option>Hindi</option>
+        <option>Tamil</option>
+        <option>Bengali</option>
+        <option>Marathi</option>
+        <option>Telugu</option>
+      </select>
+    </div>
+
+    <div id="skills-page" class="container form-wrap">
+      <div class="form-card" style="text-align:center;">
+        <h1 class="h1" style="font-size:32px;margin:0 0 16px;" data-i18n="skills.title">Select Your Skills</h1>
+        <div class="chips" id="skills-chips" style="margin-top:10px;">
+          <button class="chip" type="button" data-skill="JavaScript" data-i18n="skills.js">JavaScript</button>
+          <button class="chip" type="button" data-skill="Python" data-i18n="skills.py">Python</button>
+          <button class="chip" type="button" data-skill="Data Analysis" data-i18n="skills.data">Data Analysis</button>
+          <button class="chip" type="button" data-skill="Project Management" data-i18n="skills.pm">Project Management</button>
+          <button class="chip" type="button" data-skill="Public Policy" data-i18n="skills.policy">Public Policy</button>
+          <button class="chip" type="button" data-skill="Healthcare" data-i18n="skills.health">Healthcare</button>
+          <button class="chip" type="button" data-skill="Sustainability" data-i18n="skills.sustain">Sustainability</button>
+          <button class="chip" type="button" data-skill="Teaching" data-i18n="skills.teach">Teaching</button>
+          <button class="chip" type="button" data-skill="Human Resources" data-i18n="skills.hr">Human Resources</button>
+          <button class="chip" type="button" data-skill="Civil Engineering" data-i18n="skills.civil">Civil Engineering</button>
+          <button class="chip" type="button" data-skill="Rural Outreach" data-i18n="skills.rural">Rural Outreach</button>
+        </div>
+        <div class="input-row" style="justify-content:center;margin-top:14px;">
+          <input id="custom-skill" class="input" style="max-width:340px;" data-i18n-ph="skills.addPlaceholder" placeholder="Add a custom skill" />
+          <button id="add-skill" class="btn-ghost" type="button" data-i18n="skills.add">Add</button>
+        </div>
+        <div id="skills-selected" class="chips" style="margin-top:14px;"></div>
+        <div style="margin-top:24px;">
+          <button id="skills-continue" class="btn btn-block" type="button" data-i18n="btn.continue">Continue</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>

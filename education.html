@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="edu.title">Education Details</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="section land-bg min-h-screen center" style="padding:40px;">
+    <div class="grad-a"></div>
+    <div class="grad-b"></div>
+
+    <div class="lang">
+      <select id="language" class="select">
+        <option>English</option>
+        <option>Hindi</option>
+        <option>Tamil</option>
+        <option>Bengali</option>
+        <option>Marathi</option>
+        <option>Telugu</option>
+      </select>
+    </div>
+
+    <div class="container form-wrap">
+      <div class="form-card">
+        <h1 class="h1" style="font-size:32px;margin:0 0 16px;" data-i18n="edu.title">Education Details</h1>
+        <form class="form-grid form-grid-2" action="skills.html" method="get">
+          <div>
+            <label class="label" for="tenth" data-i18n="edu.10">10th % / Board / Year</label>
+            <input class="input" id="tenth" name="tenth" data-i18n-ph="ph.edu.10" placeholder="e.g., 86% CBSE 2018" />
+          </div>
+          <div>
+            <label class="label" for="twelfth" data-i18n="edu.12">12th % / Board / Year</label>
+            <input class="input" id="twelfth" name="twelfth" data-i18n-ph="ph.edu.12" placeholder="e.g., 90% CBSE 2020" />
+          </div>
+          <div>
+            <label class="label" for="ug" data-i18n="edu.ug">UG Degree / Branch / CGPA</label>
+            <input class="input" id="ug" name="ug" data-i18n-ph="ph.edu.ug" placeholder="e.g., B.Tech CSE 8.2" />
+          </div>
+          <div>
+            <label class="label" for="pg" data-i18n="edu.pg">PG Degree / Branch / CGPA</label>
+            <input class="input" id="pg" name="pg" data-i18n-ph="ph.edu.pg" placeholder="e.g., M.Tech AI 8.8" />
+          </div>
+          <div style="grid-column:1/-1;">
+            <label class="label" for="extra" data-i18n="edu.extra">Extra Qualifications</label>
+            <input class="input" id="extra" name="extra" data-i18n-ph="ph.edu.extra" placeholder="Certifications, Courses, etc." />
+          </div>
+          <div style="grid-column:1/-1;">
+            <label class="label" for="resume" data-i18n="edu.resume">Upload Resume (PDF)</label>
+            <input class="input" id="resume" name="resume" type="file" accept="application/pdf" />
+            <small class="hint" data-i18n="edu.resume.hint">PDF only, max 5 MB</small>
+          </div>
+          <div style="grid-column:1/-1;">
+            <button class="btn btn-block" type="submit" data-i18n="btn.next">Next</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
